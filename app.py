@@ -14,7 +14,7 @@ def classify_image(inp):
         result = f"The image is look like a Cat {probs[pred_idx]:.4f}"
     return result
 
-example = ['img/cat.jpeg', 'img/dog.webp']
+example = ['img/cat.jpeg', 'img/Dog.webp']
 
 iface = gr.Interface(fn=classify_image, inputs="image", outputs="text", examples=example)
 iface.launch()
